@@ -15,6 +15,9 @@
 # $Id$
 #
 # $Log$
+# Revision 1.4  2001/09/03 20:03:53  dave
+# Minor fixes.
+#
 # Revision 1.3  2001/09/02 16:55:18  dave
 # Added RCS headers
 #
@@ -70,7 +73,6 @@ sub CLEAR {
 
 1;
 __END__
-# Below is stub documentation for your module. You better edit it!
 
 =head1 NAME
 
