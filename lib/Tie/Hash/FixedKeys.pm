@@ -15,6 +15,9 @@
 # $Id$
 #
 # $Log$
+# Revision 1.7  2002/09/23 19:00:32  dave
+# Fixed to work under 5.8.0.
+#
 # Revision 1.6  2002/07/12 18:34:28  dave
 # Corrected Attirbute::Handlers dependency
 #
@@ -36,7 +39,7 @@ use Tie::Hash;
 use Carp;
 use vars qw(@ISA $VERSION);
 
-use Attribute::Handlers autotie => { __CALLER__::FixedKeys => __PACKAGE__ };
+use Attribute::Handlers autotie => { "__CALLER__::FixedKeys" => __PACKAGE__ };
 
 @ISA = qw(Tie::StdHash);
 
