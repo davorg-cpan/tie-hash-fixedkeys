@@ -15,6 +15,9 @@
 # $Id$
 #
 # $Log$
+# Revision 1.5  2001/12/09 18:54:42  dave
+# Added Attribute::Handlers interface.
+#
 # Revision 1.4  2001/09/03 20:03:53  dave
 # Minor fixes.
 #
@@ -29,6 +32,8 @@ use strict;
 use Tie::Hash;
 use Carp;
 use vars qw(@ISA $VERSION);
+
+use Attribute::Handlers autotie => { __CALLER__::FixedKeys => __PACKAGE__ };
 
 @ISA = qw(Tie::StdHash);
 
@@ -82,13 +87,19 @@ Tie::Hash::FixedKeys - Perl extension for hashes with fixed keys
 
   use Tie::Hash::FixedKeys;
 
-  my @keys = qw(forename surename date_of_birth gender);
+  my @keys = qw(forename surname date_of_birth gender);
   my %person;
   tie %person, 'Tie;::Hash::FixedKeys', @keys;
 
   @person{@keys} = qw(Fred Bloggs 19700101 M);
 
   $person{height} = "6'"; # generates a warning
+
+or (new! improved!)
+
+  use Tie::Hash::FixedKeys;
+
+  my %person : FixedKeys(qw(forename surname date_of_birth gender));
 
 =head1 DESCRIPTION
 
@@ -104,6 +115,11 @@ the code:
 the hash C<%person> can only contain the keys forename, surname, 
 date_of_birth and gender. Any attempt to set a value for another key
 will generate a run-time warning.
+
+=head2 ATTRIBUTE INTERFACE
+
+From version 1.5, you can use attributes to set the keys for your hash.
+You will need Attribute::Handlers version 0.76 or greater.
 
 =head2 CAVEAT
 
