@@ -1,16 +1,14 @@
 package Tie::Hash::FixedKeys;
 
 use strict;
-use warnings;
 
 use Tie::Hash;
 use Carp;
 use vars qw(@ISA $VERSION);
-require Exporter;
 
 @ISA = qw(Tie::StdHash);
 
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 sub TIEHASH {
   my $class = shift;
@@ -36,7 +34,17 @@ sub DELETE {
 
   return unless exists $self->{$key};
 
+  my $ret = $self->{$key};
+
   $self->{$key} = undef;
+
+  return $ret;
+}
+
+sub CLEAR {
+  my $self = shift;
+
+  $self->{$_} = undef foreach keys %$self;
 }
 
 1;
