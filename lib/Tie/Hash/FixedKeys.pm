@@ -15,6 +15,9 @@
 # $Id$
 #
 # $Log$
+# Revision 1.6  2002/07/12 18:34:28  dave
+# Corrected Attirbute::Handlers dependency
+#
 # Revision 1.5  2001/12/09 18:54:42  dave
 # Added Attribute::Handlers interface.
 #
@@ -25,7 +28,7 @@
 # Added RCS headers
 #
 
-package Tie::Hash::FixedKeys;
+package Tie::Hash::FixedKeys; 
 
 use strict;
 
