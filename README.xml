@@ -1,0 +1,75 @@
+<README>
+<NAME>Tie::Hash::FixedKeys</NAME>
+
+<DESCRIPTION>
+<SUBSECTION>
+<HEAD>WHAT IS Tie::Hash::FixedKeys?</HEAD>
+
+<TEXT>Tie::Hash::FixedKeys is a Perl module which extends the functionality of
+Perl hashes so that they can have a fixed set of keys.</TEXT>
+</SUBSECTION>
+
+<SUBSECTION>
+<HEAD>HOW DO I INSTALL IT?</HEAD>
+
+<TEXT>Tie::Hash::FixedKeys uses the standard Perl module architecture and can 
+therefore be installed using the standard Perl method which, in brief, goes 
+something like this:</TEXT>
+
+<CODE>   gzip -cd Tie-Hash-FixedKeys-X.XX.tar.gz | tar xvf -
+   cd Tie-Hash-FixedKeys-X.XX
+   perl Makefile.PL
+   make
+   make test
+   make install
+</CODE>
+
+<TEXT>Where X.XX is the version number of the module which you are 
+installing.</TEXT>
+
+<TEXT>If this doesn't work for you then creating a directory called Tie/Hash 
+somewhere in your Perl library path (@INC) and copying the FixedKeys.pm file 
+into this directory should also do the trick.</TEXT>
+</SUBSECTION>
+
+<SUBSECTION>
+<HEAD>WHERE IS THE DOCUMENTATION?</HEAD>
+
+<TEXT>All of the documentation is currently in POD format in the FixedKeys.pm
+file. If you install the module using the standard method you should be able
+to read it by typing</TEXT>
+
+<CODE>   perldoc Tie::Hash::FixedKeys
+</CODE>
+
+<TEXT>at a command prompt.</TEXT>
+</SUBSECTION>
+
+<SUBSECTION>
+<HEAD>LATEST VERSION</HEAD>
+
+<TEXT>The latest version of this module will always be available from 
+CPAN.</TEXT>
+</SUBSECTION>
+
+<SUBSECTION>
+<HEAD>COPYRIGHT</HEAD>
+
+<TEXT>Copyright (c) 2001, Magnum Solutions Ltd. All Rights Reserved.</TEXT>
+
+<TEXT>This script is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.</TEXT>
+</SUBSECTION>
+
+<SUBSECTION>
+<HEAD>ANYTHING ELSE?</HEAD>
+
+<TEXT>If you have any further questions, please contact me.</TEXT>
+</SUBSECTION>
+</DESCRIPTION>
+
+<AUTHOR>
+<ANAME>Dave Cross</ANAME> <EMAIL>dave@mag-sol.com</EMAIL>
+</AUTHOR>
+</README>
+
