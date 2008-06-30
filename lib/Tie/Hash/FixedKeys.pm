@@ -62,7 +62,9 @@ This module is left on CPAN as an example of tied hashes.
 
 package Tie::Hash::FixedKeys; 
 
+use 5.006;
 use strict;
+use warnings;
 
 use Tie::Hash;
 use Carp;
