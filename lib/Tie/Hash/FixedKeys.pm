@@ -72,7 +72,7 @@ use Attribute::Handlers autotie => { "__CALLER__::FixedKeys" => __PACKAGE__ };
 
 @ISA = qw(Tie::StdHash);
 
-$VERSION = sprintf "%d.%02d", '$Revision$ ' =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d", '$Revision$ ' =~ /(\d+)/;
 
 =head1 METHODS
 
