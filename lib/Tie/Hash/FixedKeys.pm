@@ -145,7 +145,7 @@ __END__
 
 Dave Cross <dave@mag-sol.com>
 
-=head1 COPYRIGHT
+=head1 COPYRIGHT AND LICENSE
 
 Copyright (C) 2001, Magnum Solutions Ltd.  All Rights Reserved.
 
@@ -157,31 +157,3 @@ modify it under the same terms as Perl itself.
 perl(1), perltie(1).
 
 =cut
-   
-#
-# $Log$
-# Revision 1.10  2006/06/01 18:59:12  dave
-# Added note about Hash::Util::lock_keys.
-#
-# Revision 1.9  2005/10/22 21:29:58  dave
-# Added pod coverage tests.
-#
-# Revision 1.8  2004/10/23 16:05:19  dave
-# Improved test coverage.
-#
-# Revision 1.7  2002/09/23 19:00:32  dave
-# Fixed to work under 5.8.0.
-#
-# Revision 1.6  2002/07/12 18:34:28  dave
-# Corrected Attirbute::Handlers dependency
-#
-# Revision 1.5  2001/12/09 18:54:42  dave
-# Added Attribute::Handlers interface.
-#
-# Revision 1.4  2001/09/03 20:03:53  dave
-# Minor fixes.
-#
-# Revision 1.3  2001/09/02 16:55:18  dave
-# Added RCS headers
-#
-
