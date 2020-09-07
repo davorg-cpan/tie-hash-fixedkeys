@@ -68,13 +68,12 @@ use warnings;
 
 use Tie::Hash;
 use Carp;
-use vars qw(@ISA $VERSION);
 
 use Attribute::Handlers autotie => { "__CALLER__::FixedKeys" => __PACKAGE__ };
 
-@ISA = qw(Tie::StdHash);
+our @ISA = qw(Tie::StdHash);
 
-$VERSION = 1.12;
+our $VERSION = '1.13.0';
 
 =head1 METHODS
 
