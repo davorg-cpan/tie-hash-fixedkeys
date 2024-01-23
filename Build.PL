@@ -11,11 +11,11 @@ my $build = Module::Build->new(
     resources => {
       repository => {
        type => 'git',
-       url  => 'git://github.com/davorg/tie-hash-fixedkeys.git',
-       web  => 'https://github.com/davorg/tie-hash-fixedkeys',
+       url  => 'git://github.com/davorg-cpan/tie-hash-fixedkeys.git',
+       web  => 'https://github.com/davorg-cpan/tie-hash-fixedkeys',
       },
       bugtracker => {
-       web  => 'https://github.com/davorg/tie-hash-fixedkeys/issues',
+       web  => 'https://github.com/davorg-cpan/tie-hash-fixedkeys/issues',
       },
     },
   },
